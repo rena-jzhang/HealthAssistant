@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pop_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:gravity="center_horizontal">
+
+
+    <TextView
+        android:id="@+id/tv_register_info_height_value"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:includeFontPadding="false"
+        android:maxHeight="17.0sp"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="109dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_register_info_height_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.zkk.view.rulerview.RulerView
+            android:id="@+id/ruler_height"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@color/lightGreen"
+            android:backgroundTint="@color/lightGreen"
+            app:alphaEnable="true"
+            app:lineColor="@color/black"
+            app:lineMaxHeight="40dp"
+            app:lineMidHeight="30dp"
+            app:lineMinHeight="20dp"
+            app:lineSpaceWidth="10dp"
+            app:lineWidth="2dip"
+            app:maxValue="250.0"
+            app:minValue="80.0"
+            app:perValue="1"
+            app:selectorValue="165.0"
+            app:textColor="@color/black"
+            app:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="14.0dip"
+            android:layout_height="46.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_info_ruler_height" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="204dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/lightGreen"
+        android:outlineAmbientShadowColor="@color/white"
+        android:text="确认"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cancel"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.823" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/lightGreen"
+        android:outlineAmbientShadowColor="@color/white"
+        android:padding="0dp"
+        android:text="取消"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.823" />
+
+</android.support.constraint.ConstraintLayout>

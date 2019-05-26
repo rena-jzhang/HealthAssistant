@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D2D3E6D8</color>
+    <color name="colorPrimaryDark">#98EEF1F2</color>
+    <color name="colorAccent">#C95252</color>
+    <color name="black">#C1000000</color>
+    <color name="gray">#F5EEF1F2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="list_divider_line">#C95252</color>
+    <color name="lightGreen">#D2C8DBCD</color>
+    <color name="blue">#5242AB50</color>
+    <color name="darkGray">#D2374039</color>
+    <color name="colorYellow">#F1C84C</color>
+    <integer-array name="gradient_arc_color">
+        <item>@color/lightGreen</item>
+        <item>@color/blue</item>
+        <item>@color/list_divider_line</item>
+    </integer-array>
+
+</resources>
