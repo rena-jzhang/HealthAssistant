@@ -162,7 +162,7 @@ SQLiteDatabase db=myStatic.getInstance().getDb();
                 } else {
                     if (!et_code.getText().toString().equals(realCode)) {
                         //弹出提示
-                        Toast.makeText(Register.this, "验证码错误", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(Register.this, "验证码错误", Toast.LENGTH_SHORT).show();
                         //清空pwd2
                         et_code.setText("");
                     }
